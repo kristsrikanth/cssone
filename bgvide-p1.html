@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.content{
+    text-align: center;
+    justify-content: center;
+}
+
+.content a{
+    list-style: none;
+    border: solid red 1px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.content h1{
+    text-transform: capitalize;
+}
+.content h1:hover{
+    color: aliceblue;
+    font-style: italic;
+}
+.content a:hover{
+    background-color: blue;
+    font-style: italic;
+    transition: 0.5s;
+}
+.background_video{
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+}
+
+    .hero  {
+ height: 100vh;
+ width: 100%;
+ 
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.hero video{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+
+}
+
+/*@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}*/
+
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <video autoplay loop controls class="background_video">
+        <source src="video.mp4">
+    </video>
+    </section>
+<section class="content">
+    <h1>my journey</h1>
+    <a href="#">explore</a>
+</section>
+    
+</body>
+</html>
